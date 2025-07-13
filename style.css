@@ -1,0 +1,76 @@
+
+  body {
+      margin:0%;
+      background: #33ff44;
+      width: 100%;
+    }
+
+    .titulo {
+      background: linear-gradient(to right, #3005f1, #00ff4c);;
+      border-color: black;
+      font-weight: bold;
+      font-size: 80px;
+      font-family: Inknut Antiqua;
+      margin: 0px;
+    }
+
+    .logo-central img {
+      width: 10%;
+      left: 45%;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .barra-secundaria {
+      width: 100%;
+      margin: 0%;
+    }
+
+  .contenedor {
+      width: 100%;
+    }
+    
+    .videos {
+      padding: 1px 1px;
+        cursor: pointer;
+        background-color: #e2e2e2;
+  }
+
+    .imagenes {
+      background-color: #e2e2e2;
+  padding: 1px 1px;
+    cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #9f9ae7;
+    }
+
+    .seccion {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 40%;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .seccion p {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .whatssap img{
+      width: 90px;
+      left: 0%;
+      position: absolute;
+    }
+
+    .facebook img{
+      width: 80px;
+      right: 0%;
+      border-radius: 50%;
+      position: absolute;
+    }
