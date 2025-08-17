@@ -1,76 +1,262 @@
+/* ====== GENERAL ====== */
+body {
+  margin: 0;
+  font-family: 'Inknut Antiqua', serif;
+  color: #fff;
+  background: linear-gradient(135deg, #005eff, #00ff73);
+  background-size: 400% 400%;
+  animation: cambioColores 10s ease infinite;
+}
 
-  body {
-      margin:0%;
-      background: #33ff44;
-      width: 100%;
-    }
+/* Animación de fondo suave */
+@keyframes cambioColores {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-    .titulo {
-      background: linear-gradient(to right, #3005f1, #00ff4c);;
-      border-color: black;
-      font-weight: bold;
-      font-size: 80px;
-      font-family: Inknut Antiqua;
-      margin: 0px;
-    }
+/* ====== TÍTULO ====== */
+.titulo {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: bold;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  border: 2px solid hsl(0, 0%, 42%); /* Cambia el color y grosor a tu gusto */
+  border-radius: 0px; /* Opcional: bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Opcional: sombra para resaltar */
+}
 
-    .logo-central img {
-      width: 10%;
-      left: 45%;
-      border-radius: 50%;
-      position: absolute;
-    }
+/* ====== LOGO ====== */
+.logo-central img {
+  width: 140px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+.logo-central img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
 
-    .barra-secundaria {
-      width: 100%;
-      margin: 0%;
-    }
+/* ====== REDES SOCIALES ====== */
+.redes {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+.redes img {
+  width: 55px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+.redes img:hover {
+  transform: scale(1.15);
+}
 
-  .contenedor {
-      width: 100%;
-    }
-    
-    .videos {
-      padding: 1px 1px;
-        cursor: pointer;
-        background-color: #e2e2e2;
+/* ====== BARRA SECUNDARIA ====== */
+.barra-secundaria {
+  position: relative;
+  z-index: 1;
+}
+.barra-secundaria img {
+  width: 100%;
+  display: block;
+}
+
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px 25px 25px 25px; /* Reducido el padding superior */
+  margin-top: -70px; /* Ajusta este valor según necesites subirlos más */
+}
+
+
+/* ====== BOTONES CARD ====== */
+.boton-card {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  text-decoration: none;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.boton-card img {
+  width: 100%;
+  display: block;
+}
+.boton-card span {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.boton-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .redes {
+    flex-direction: row;
+    bottom: 10px;
+    right: 10px;
   }
+  .redes img {
+    width: 50px;
+  }
+  .boton-card {
+    max-width: 90%;
+  }
+}
+/* ====== GENERAL ====== */
+body {
+  margin: 0;
+  font-family: 'Inknut Antiqua', serif;
+  color: #38f309;
+  background: linear-gradient(135deg, #005eff, #00ff15);
+  background-size: 400% 400%;
+  animation: cambioColores 10s ease infinite;
+}
 
-    .imagenes {
-      background-color: #e2e2e2;
-  padding: 1px 1px;
-    cursor: pointer;
-    }
+/* Animación de fondo suave */
+@keyframes cambioColores {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-    button:hover {
-      background-color: #9f9ae7;
-    }
+/* ====== TÍTULO ====== */
+.titulo {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: bold;
+  letter-spacing: px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
 
-    .seccion {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 40%;
-      text-align: center;
-      padding: 20px;
-    }
-    
-    .seccion p {
-      margin-top: 10px;
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
-    }
+/* ====== LOGO ====== */
+.logo-central {
+  position: relative; /* Permite usar z-index */
+  z-index: 2; /* Encima del GIF */
+}
 
-    .whatssap img{
-      width: 90px;
-      left: 0%;
-      position: absolute;
-    }
+.logo-central img {
+  width: 140px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+.logo-central img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
 
-    .facebook img{
-      width: 80px;
-      right: 0%;
-      border-radius: 50%;
-      position: absolute;
-    }
+/* ====== REDES SOCIALES ====== */
+.redes {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+.redes img {
+  width: 55px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+.redes img:hover {
+  transform: scale(1.15);
+}
+
+/* ====== BARRA SECUNDARIA ====== */
+.barra-secundaria {
+  position: relative;
+  top: -200px; /* Ajusta la posición vertical */
+  z-index: 1;
+}
+
+.barra-secundaria img {
+  width: 100%;
+  display: block;
+   border: 2px solid #6b6a6a; /* Cambia el color y grosor a tu gusto */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Opcional: sombra para resaltar */
+}
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px;
+}
+
+/* ====== BOTONES CARD ====== */
+.boton-card {
+  background: rgba(255,255,255,0.9);
+  color: #000;
+  text-decoration: none;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.boton-card img {
+  width: 100%;
+  display: block;
+}
+.boton-card span {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.boton-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .redes {
+    flex-direction: row;
+    bottom: 10px;
+    right: 10px;
+  }
+  .redes img {
+    width: 50px;
+  }
+  .boton-card {
+    max-width: 90%;
+  }
+}
